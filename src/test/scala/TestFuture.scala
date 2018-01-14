@@ -7,6 +7,7 @@ class TestFuture extends FutureDSL {
 
   @Test
   def waitingForFuture() {
+    printThreadInfo("init")
     FutureAction(() => getSentence)
       .doNext(upperCase)
       .doNext(concat(". This is awesome!!"))
@@ -21,6 +22,7 @@ class TestFuture extends FutureDSL {
 
   @Test
   def waitingForMultipleFuture() {
+    printThreadInfo("init")
     FutureAction(() => getSentence)
       .doNext(upperCase)
       .doNext(concat(". This is awesome!!"))
@@ -35,6 +37,7 @@ class TestFuture extends FutureDSL {
 
   @Test
   def withoutWait() {
+    printThreadInfo("init")
     FutureAction(() => getSentence)
       .doNext(upperCase)
       .doNext(concat(". This is awesome!!"))
@@ -45,29 +48,29 @@ class TestFuture extends FutureDSL {
   }
 
   def getSentence: Either[String, String] = {
-    printThreadInfo
+    printThreadInfo("sentence")
     new Right("hello future DSL world")
   }
 
   def upperCase: (String => Option[String]) = a => {
-    printThreadInfo
+    printThreadInfo("upper")
     Thread.sleep(200)
     Option(a.toUpperCase)
   }
 
   def concat(value: String): (String => String) = a => {
-    printThreadInfo
+    printThreadInfo("concat")
     a.concat(value)
   }
 
   def replace(old: String, newValue: String): (String => String) = a => {
-    printThreadInfo
+    printThreadInfo("replace")
     a.replace(old, newValue)
   }
 
-  def printThreadInfo: Unit = {
-    println(s"Thread:${
-      Thread.currentThread().getName()
+  def printThreadInfo(step:String): Unit = {
+    println(s"Thread:$step - ${
+      Thread.currentThread().getName
     }")
   }
 
