@@ -1,4 +1,4 @@
-name := "FutureDSL"
+name := "FreeFuture"
 
 version := "0.1"
 
