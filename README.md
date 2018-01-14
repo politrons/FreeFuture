@@ -2,7 +2,7 @@
 ![My image](img/future.png)
 A Free monad of scalaz to wrap scala futures to add extra features.
 
-In case you want to run some function async and concat that future with other functions.
+In case you want to run some function asynchroniously  and concat that future with other functions.
 
 ```
   FutureAction(() => getSentence)
