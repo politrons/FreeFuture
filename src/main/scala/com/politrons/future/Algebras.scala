@@ -14,6 +14,8 @@ trait Algebras {
 
   case class _Action(f: () => Any) extends Action[Any]
 
+  case class _Zip[T](f: () => Any, f1: () => Any, zip: (T, T) => Any) extends Action[Any]
+
   case class _OnNext[T](future: Future[Any], f: T => Any) extends Action[Any]
 
   case class _DoNewFuture[T](future: Future[Any], f: T => Any) extends Action[Any]

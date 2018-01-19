@@ -5,10 +5,33 @@ import org.junit.Test
 
 class TestFuture extends FutureDSL {
 
+
+  @Test
+  def futureZip() {
+    printThreadInfo("init")
+    ParallelFunctions(getSentence, getSecondSentence, concat)
+      .doNext(upperCase)
+      .appendResult()
+      .~>
+    Thread.sleep(2000)
+    println(result)
+  }
+
+  @Test
+  def futureZipWithErrors() {
+    printThreadInfo("init")
+    ParallelFunctions(getSentence, () => null.asInstanceOf[String], concat)
+      .doNext(upperCase)
+      .appendResult()
+      .~>
+    Thread.sleep(2000)
+    println(result)
+  }
+
   @Test
   def waitingForFuture() {
     printThreadInfo("init")
-    FutureAction(() => getSentence)
+    FutureFunction(() => getSentence)
       .doNext(upperCase)
       .doNext(concat(". This is awesome!!"))
       .doNext(upperCase)
@@ -23,7 +46,7 @@ class TestFuture extends FutureDSL {
   @Test
   def waitingForMultipleFuture() {
     printThreadInfo("init")
-    FutureAction(() => getSentence)
+    FutureFunction(getSentence)
       .doNext(upperCase)
       .doNext(concat(". This is awesome!!"))
       .doNext(upperCase)
@@ -38,7 +61,7 @@ class TestFuture extends FutureDSL {
   @Test
   def withoutWait() {
     printThreadInfo("init")
-    FutureAction(() => getSentence)
+    FutureFunction(getSentence)
       .doNext(upperCase)
       .doNext(concat(". This is awesome!!"))
       .doNext(upperCase)
@@ -47,9 +70,14 @@ class TestFuture extends FutureDSL {
     println(result)
   }
 
-  def getSentence: Either[String, String] = {
+  def getSentence: () => Either[String, String] = {
     printThreadInfo("sentence")
-    new Right("hello future DSL world")
+    () => new Right("hello future DSL world")
+  }
+
+  def getSecondSentence: () => Either[String, String] = {
+    printThreadInfo("sentence")
+    () => new Right(" run in parallel is awesome")
   }
 
   def upperCase: (String => Option[String]) = a => {
@@ -63,12 +91,17 @@ class TestFuture extends FutureDSL {
     a.concat(value)
   }
 
+  def concat: ((String, String) => String) = (a, b) => {
+    printThreadInfo("concat")
+    a.concat(b)
+  }
+
   def replace(old: String, newValue: String): (String => String) = a => {
     printThreadInfo("replace")
     a.replace(old, newValue)
   }
 
-  def printThreadInfo(step:String): Unit = {
+  def printThreadInfo(step: String): Unit = {
     println(s"Thread:$step - ${
       Thread.currentThread().getName
     }")
