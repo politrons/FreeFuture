@@ -1,11 +1,11 @@
 # FreeFuture
 ![My image](img/future.png)
-A Free monad of scalaz to wrap scala futures to add extra features.
+A Free monad of scalaz to wrap scala futures to help the use of futures.
 
 In case you want to run some function asynchroniously and chain with other functions in a pipeline.
 
 ```
-  FutureAction(() => getSentence)
+  FutureAction(getSentence)
       .doNext(upperCase)
       .doNext(concat(". This is awesome!!"))
       .doNext(upperCase)

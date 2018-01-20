@@ -31,7 +31,7 @@ class TestFuture extends FutureDSL {
   @Test
   def waitingForFuture() {
     printThreadInfo("init")
-    FutureFunction(() => getSentence)
+    FutureFunction(getSentence)
       .doNext(upperCase)
       .doNext(concat(". This is awesome!!"))
       .doNext(upperCase)
