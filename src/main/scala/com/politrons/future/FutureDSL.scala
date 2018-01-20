@@ -17,18 +17,20 @@ trait FutureDSL extends Actions {
     liftF[Action, Any](_Zip(f, f1, zip))
   }
 
-  override def interpreter: Action ~> Monad = new (Action ~> Monad) {
+  type Transformer = ~>[Action, FutureM]
 
-    def apply[A](a: Action[A]): Monad[A] = a match {
-      case _Action(function) => runInFuture(function);
-      case _Zip(f1, f2, zip) => zipFunctions(f1, f2, zip)
-      case _OnNext(future, f) => transformFuture(future, f)
-      case _DoNewFuture(future, f) => runInNewFuture(future, f)
+  override def interpreter: Transformer = new Transformer {
+
+    def apply[A](a: Action[A]): FutureM[A] = a match {
+      case _Action(function) => runInFuture(function).asFutureM
+      case _Zip(f1, f2, zip) => zipFunctions(f1, f2, zip).asFutureM
+      case _OnNext(future, f) => transformFuture(future, f).asFutureM
+      case _DoNewFuture(future, f) => runInNewFuture(future, f).asFutureM
       case _WhenFinish(future) => appendFutureValue(future)
     }
   }
 
-  def zipFunctions(f1: () => Any, f2: () => Any, zip: (Nothing, Nothing) => Any): Future[Any] = {
+  def zipFunctions[A](f1: () => Any, f2: () => Any, zip: (Nothing, Nothing) => Any): Future[Any] = {
     val zipFunction = zip.asInstanceOf[(Any, Any) => Any]
     runInFuture(f1)
       .zip(runInFuture(f2))
@@ -70,6 +72,12 @@ trait FutureDSL extends Actions {
     }
   }
 
-  def appendFutureValue(future: Future[Any]): Any = future.onComplete(value => result = value.get)
+  def appendFutureValue[A](future: Future[Any]): FutureM[A] = {
+    future.onComplete(value => result = value.get).asInstanceOf[FutureM[A]]
+  }
+
+  implicit class customFuture(future: Future[Any]) {
+    def asFutureM[A] = future.asInstanceOf[FutureM[A]]
+  }
 
 }

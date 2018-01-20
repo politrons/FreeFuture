@@ -6,7 +6,7 @@ import scalaz.Free
 
 trait Algebras {
 
-  type Monad[+A] = A
+  type FutureM[+A] = A
 
   sealed trait Action[A]
 
