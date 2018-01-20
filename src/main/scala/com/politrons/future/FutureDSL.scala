@@ -32,19 +32,14 @@ trait FutureDSL extends Actions {
     val zipFunction = zip.asInstanceOf[(Any, Any) => Any]
     runInFuture(f1)
       .zip(runInFuture(f2))
-      .map(tuple => processZip(zipFunction, tuple))
+      .map(tuple => zipFunction.apply(processEither(tuple._1), processEither(tuple._2)))
   }
 
-  private def processZip(zipFunction: (Any, Any) => Any, tuple: (Any, Any)) = {
-    val value1 = tuple._1 match {
+  private def processEither(value: Any) = {
+    value match {
       case right: Right[Any, Any] => right.right.get
-      case _ => " Error in first function"
+      case _ => " Error function"
     }
-    val value2 = tuple._2 match {
-      case right: Right[Any, Any] => right.right.get
-      case _ => " Error in second function"
-    }
-    zipFunction.apply(value1, value2)
   }
 
   def runInFuture(function: () => Any): Future[Any] = {

@@ -1,11 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="059d764d-576f-4ad1-9cf5-a0de73c0a5f3" name="Default" comment="">
+    <list default="true" id="059d764d-576f-4ad1-9cf5-a0de73c0a5f3" name="Default" comment="Adding zip">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/politrons/future/Algebras.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/politrons/future/Algebras.scala" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/politrons/future/FutureDSL.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/politrons/future/FutureDSL.scala" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/TestFuture.scala" afterPath="$PROJECT_DIR$/src/test/scala/TestFuture.scala" />
+      <change beforePath="$PROJECT_DIR$/target/.history" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Actions$class.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Actions$customAny.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Actions$customFree$$anonfun$appendResult$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Actions$customFree$$anonfun$doNewFuture$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Actions$customFree$$anonfun$doNext$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Actions$customFree.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Actions.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Algebras$Action.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Algebras$_Action$.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Algebras$_Action.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Algebras$_DoNewFuture$.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Algebras$_DoNewFuture.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Algebras$_OnNext$.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Algebras$_OnNext.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Algebras$_WhenFinish$.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Algebras$_WhenFinish.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Algebras$class.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Algebras.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/FutureDSL$$anon$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/FutureDSL$$anonfun$appendFutureValue$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/FutureDSL$$anonfun$com$politrons$future$FutureDSL$$runInNewFuture$1$$anonfun$apply$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/FutureDSL$$anonfun$com$politrons$future$FutureDSL$$runInNewFuture$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/FutureDSL$$anonfun$transformFuture$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/FutureDSL$class.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/FutureDSL.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/resolution-cache/reports/ivy-report.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/resolution-cache/reports/ivy-report.xsl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/com/politrons/future/TestFuture$$anonfun$concat$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/com/politrons/future/TestFuture$$anonfun$replace$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/com/politrons/future/TestFuture$$anonfun$upperCase$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/com/politrons/future/TestFuture$$anonfun$waitingForFuture$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/com/politrons/future/TestFuture$$anonfun$waitingForMultipleFuture$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/com/politrons/future/TestFuture.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/$global/$global/streams/out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/$global/dumpStructure/$global/streams/out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/input_dsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/ivyConfiguration/$global/streams/out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/ivySbt/$global/streams/out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/projectDescriptors/$global/streams/out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/inputs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/output" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/unmanagedClasspath/$global/streams/export" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/unmanagedJars/$global/streams/export" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/$global/streams/export" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/streams/runtime/unmanagedClasspath/$global/streams/export" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/streams/runtime/unmanagedJars/$global/streams/export" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/$global/streams/export" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/managedClasspath/$global/streams/export" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/unmanagedClasspath/$global/streams/export" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/unmanagedJars/$global/streams/export" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -44,8 +100,8 @@
       <file leaf-file-name="TestFuture.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/TestFuture.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+            <state relative-caret-position="210">
+              <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -67,8 +123,8 @@
       <file leaf-file-name="Actions.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/politrons/future/Actions.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="306">
+              <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
               <folding>
                 <element signature="e#30#60#0" expanded="true" />
               </folding>
@@ -76,11 +132,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FutureDSL.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Free.scala" pinned="false" current-in-tab="true">
+        <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalaz/scalaz-core_2.11/srcs/scalaz-core_2.11-7.2.14-sources.jar!/scalaz/Free.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="213" column="12" lean-forward="false" selection-start-line="213" selection-start-column="12" selection-end-line="213" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FutureDSL.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/politrons/future/FutureDSL.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+            <state relative-caret-position="160">
+              <caret line="31" column="57" lean-forward="false" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
               <folding>
                 <element signature="e#30#87#0" expanded="true" />
               </folding>
@@ -101,8 +167,8 @@
       <file leaf-file-name="Algebras.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/politrons/future/Algebras.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="16" column="60" lean-forward="false" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+            <state relative-caret-position="105">
+              <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -290,7 +356,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestFuture.futureZipWithErrors">
+  <component name="RunManager" selected="JUnit.TestFuture.futureZip">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module />
       <option name="WIDTH" value="400" />
@@ -311,6 +377,31 @@
       <module name="" />
       <envs />
     </configuration>
+    <configuration name="TestFuture.futureZip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.politrons.future.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="freefuture" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="com.politrons.future.TestFuture" />
+      <option name="METHOD_NAME" value="futureZip" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="TestFuture.futureZipWithErrors" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -324,31 +415,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="com.politrons.future.TestFuture" />
       <option name="METHOD_NAME" value="futureZipWithErrors" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="TestFuture.waitingForFuture" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.politrons.future.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="freefuture" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="com.politrons.future.TestFuture" />
-      <option name="METHOD_NAME" value="waitingForFuture" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -563,19 +629,19 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TestFuture.waitingForFuture" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestFuture.waitingForMultipleFuture" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestFuture.withoutWait" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestFuture.waitingForFutureZip" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestFuture.futureZipWithErrors" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TestFuture.waitingForMultipleFuture" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestFuture.withoutWait" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestFuture.waitingForFutureZip" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestFuture.futureZipWithErrors" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestFuture.futureZip" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestFuture.futureZipWithErrors" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestFuture.waitingForFutureZip" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestFuture.waitingForMultipleFuture" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestFuture.withoutWait" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestFuture.waitingForFuture" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestFuture.futureZip" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestFuture.futureZipWithErrors" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestFuture.waitingForFutureZip" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestFuture.waitingForMultipleFuture" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestFuture.withoutWait" />
       </list>
     </recent_temporary>
   </component>
@@ -661,7 +727,7 @@
       <updated>1515936667822</updated>
       <workItem from="1515936757173" duration="1077000" />
       <workItem from="1515937863070" duration="2811000" />
-      <workItem from="1516351596946" duration="4828000" />
+      <workItem from="1516351596946" duration="5313000" />
     </task>
     <task id="LOCAL-00001" summary="configs">
       <created>1515937801659</created>
@@ -691,11 +757,24 @@
       <option name="project" value="LOCAL" />
       <updated>1515954575117</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding zip">
+      <created>1516403452126</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1516403452127</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="TestFuture_futureZip - 2018.01.20 at 00h 16m 33s.xml">
+      <configuration name="TestFuture.futureZip" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="TestFuture_futureZipWithErrors - 2018.01.20 at 00h 10m 18s.xml">
+      <configuration name="TestFuture.futureZipWithErrors" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestFuture_futureZipWithErrors - 2018.01.20 at 00h 16m 01s.xml">
       <configuration name="TestFuture.futureZipWithErrors" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestFuture_waitingForFutureZip - 2018.01.19 at 23h 55m 49s.xml">
@@ -713,12 +792,6 @@
     <history-entry file="TestFuture_waitingForFutureZip - 2018.01.20 at 00h 08m 24s.xml">
       <configuration name="TestFuture.waitingForFutureZip" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestFuture_waitingForMultipleFuture - 2018.01.14 at 19h 19m 49s.xml">
-      <configuration name="TestFuture.waitingForMultipleFuture" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestFuture_waitingForMultipleFuture - 2018.01.14 at 19h 32m 01s.xml">
-      <configuration name="TestFuture.waitingForMultipleFuture" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestFuture_waitingForMultipleFuture - 2018.01.19 at 23h 04m 46s.xml">
       <configuration name="TestFuture.waitingForMultipleFuture" configurationId="JUnit" />
     </history-entry>
@@ -727,11 +800,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8716000" />
+    <option name="totallyTimeSpent" value="9201000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="22" width="1241" height="778" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="GfmBrowser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -756,7 +828,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5592972" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26522103" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26522103" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -779,18 +851,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="configs" />
-    <option name="LAST_COMMIT_MESSAGE" value="configs" />
+    <MESSAGE value="Adding zip" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding zip" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/main/scala/com/politrons/future/FutureDSL.scala</url>
-          <line>69</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
@@ -885,16 +950,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/politrons/future/Actions.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="e#30#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.8-sources.jar!/scala/concurrent/Future.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1563">
@@ -903,29 +958,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/politrons/future/Algebras.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/politrons/future/FutureDSL.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="16" column="60" lean-forward="false" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
-          <folding />
+        <state relative-caret-position="160">
+          <caret line="31" column="57" lean-forward="false" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
+          <folding>
+            <element signature="e#30#87#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/TestFuture.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        <state relative-caret-position="210">
+          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/politrons/future/FutureDSL.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/politrons/future/Algebras.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+        <state relative-caret-position="105">
+          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/politrons/future/Actions.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
           <folding>
-            <element signature="e#30#87#0" expanded="true" />
+            <element signature="e#30#60#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalaz/scalaz-core_2.11/srcs/scalaz-core_2.11-7.2.14-sources.jar!/scalaz/Free.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="213" column="12" lean-forward="false" selection-start-line="213" selection-start-column="12" selection-end-line="213" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
