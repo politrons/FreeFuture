@@ -32,7 +32,7 @@ trait FutureDSL extends Actions {
     val zipFunction = zip.asInstanceOf[(Any, Any) => Any]
     runInFuture(f1)
       .zip(runInFuture(f2))
-      .map(tuple => zipFunction.apply(processEither(tuple._1), processEither(tuple._2)))
+      .map(tuple => zipFunction(processEither(tuple._1), processEither(tuple._2)))
   }
 
   private def processEither(value: Any) = {
@@ -44,7 +44,7 @@ trait FutureDSL extends Actions {
 
   def runInFuture(function: () => Any): Future[Any] = {
     Future {
-      function.apply()
+      function()
     }
   }
 

@@ -1,67 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="059d764d-576f-4ad1-9cf5-a0de73c0a5f3" name="Default" comment="Adding zip">
+    <list default="true" id="059d764d-576f-4ad1-9cf5-a0de73c0a5f3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/politrons/future/FutureDSL.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/politrons/future/FutureDSL.scala" />
-      <change beforePath="$PROJECT_DIR$/target/.history" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Actions$class.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Actions$customAny.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Actions$customFree$$anonfun$appendResult$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Actions$customFree$$anonfun$doNewFuture$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Actions$customFree$$anonfun$doNext$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Actions$customFree.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Actions.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Algebras$Action.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Algebras$_Action$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Algebras$_Action.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Algebras$_DoNewFuture$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Algebras$_DoNewFuture.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Algebras$_OnNext$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Algebras$_OnNext.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Algebras$_WhenFinish$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Algebras$_WhenFinish.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Algebras$class.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/Algebras.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/FutureDSL$$anon$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/FutureDSL$$anonfun$appendFutureValue$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/FutureDSL$$anonfun$com$politrons$future$FutureDSL$$runInNewFuture$1$$anonfun$apply$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/FutureDSL$$anonfun$com$politrons$future$FutureDSL$$runInNewFuture$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/FutureDSL$$anonfun$transformFuture$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/FutureDSL$class.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/politrons/future/FutureDSL.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/resolution-cache/reports/ivy-report.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/resolution-cache/reports/ivy-report.xsl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/com/politrons/future/TestFuture$$anonfun$concat$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/com/politrons/future/TestFuture$$anonfun$replace$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/com/politrons/future/TestFuture$$anonfun$upperCase$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/com/politrons/future/TestFuture$$anonfun$waitingForFuture$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/com/politrons/future/TestFuture$$anonfun$waitingForMultipleFuture$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/com/politrons/future/TestFuture.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/$global/$global/streams/out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/$global/dumpStructure/$global/streams/out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/input_dsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/ivyConfiguration/$global/streams/out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/ivySbt/$global/streams/out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/projectDescriptors/$global/streams/out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/inputs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/output" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/unmanagedClasspath/$global/streams/export" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/unmanagedJars/$global/streams/export" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/$global/streams/export" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/streams/runtime/unmanagedClasspath/$global/streams/export" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/streams/runtime/unmanagedJars/$global/streams/export" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/$global/streams/export" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/managedClasspath/$global/streams/export" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/unmanagedClasspath/$global/streams/export" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/unmanagedJars/$global/streams/export" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -132,7 +74,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Free.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Free.scala" pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalaz/scalaz-core_2.11/srcs/scalaz-core_2.11-7.2.14-sources.jar!/scalaz/Free.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="219">
@@ -142,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FutureDSL.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FutureDSL.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/politrons/future/FutureDSL.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="31" column="57" lean-forward="false" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
+            <state relative-caret-position="483">
+              <caret line="46" column="16" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
               <folding>
                 <element signature="e#30#87#0" expanded="true" />
               </folding>
@@ -727,7 +669,7 @@
       <updated>1515936667822</updated>
       <workItem from="1515936757173" duration="1077000" />
       <workItem from="1515937863070" duration="2811000" />
-      <workItem from="1516351596946" duration="5313000" />
+      <workItem from="1516351596946" duration="5390000" />
     </task>
     <task id="LOCAL-00001" summary="configs">
       <created>1515937801659</created>
@@ -764,11 +706,21 @@
       <option name="project" value="LOCAL" />
       <updated>1516403452127</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Adding zip">
+      <created>1516439301714</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1516439301714</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
     <history-entry file="TestFuture_futureZip - 2018.01.20 at 00h 16m 33s.xml">
+      <configuration name="TestFuture.futureZip" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestFuture_futureZip - 2018.01.20 at 10h 09m 27s.xml">
       <configuration name="TestFuture.futureZip" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestFuture_futureZipWithErrors - 2018.01.20 at 00h 10m 18s.xml">
@@ -795,15 +747,13 @@
     <history-entry file="TestFuture_waitingForMultipleFuture - 2018.01.19 at 23h 04m 46s.xml">
       <configuration name="TestFuture.waitingForMultipleFuture" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestFuture_withoutWait - 2018.01.14 at 19h 18m 31s.xml">
-      <configuration name="TestFuture.withoutWait" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9201000" />
+    <option name="totallyTimeSpent" value="9278000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="22" width="1241" height="778" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="GfmBrowser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -828,7 +778,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5592972" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26522103" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26522103" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -958,16 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/politrons/future/FutureDSL.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="31" column="57" lean-forward="false" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
-          <folding>
-            <element signature="e#30#87#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/TestFuture.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -999,6 +939,16 @@
         <state relative-caret-position="219">
           <caret line="213" column="12" lean-forward="false" selection-start-line="213" selection-start-column="12" selection-end-line="213" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/politrons/future/FutureDSL.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="46" column="16" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+          <folding>
+            <element signature="e#30#87#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
