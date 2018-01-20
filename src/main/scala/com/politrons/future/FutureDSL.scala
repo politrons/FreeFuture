@@ -26,7 +26,7 @@ trait FutureDSL extends Actions {
       case _Zip(f1, f2, zip) => zipFunctions(f1, f2, zip).asFutureM
       case _OnNext(future, f) => transformFuture(future, f).asFutureM
       case _DoNewFuture(future, f) => runInNewFuture(future, f).asFutureM
-      case _WhenFinish(future) => appendFutureValue(future)
+      case _WhenFinish(future) => appendFutureValue(future).asFutureM
     }
   }
 
@@ -72,12 +72,6 @@ trait FutureDSL extends Actions {
     }
   }
 
-  def appendFutureValue[A](future: Future[Any]): FutureM[A] = {
-    future.onComplete(value => result = value.get).asInstanceOf[FutureM[A]]
-  }
-
-  implicit class customFuture(future: Future[Any]) {
-    def asFutureM[A] = future.asInstanceOf[FutureM[A]]
-  }
+  def appendFutureValue[A](future: Future[Any]): Any = future.onComplete(value => result = value.get)
 
 }

@@ -33,6 +33,9 @@ trait Actions extends Algebras {
     def asEither = any.asInstanceOf[Either[Any, Any]]
 
     def asOption = any.asInstanceOf[Option[Any]]
+
+    def asFutureM[A] = any.asInstanceOf[FutureM[A]]
+
   }
 
 }
