@@ -12,7 +12,7 @@ class TestFuture extends FutureDSL {
     ParallelFunctions(getSentence, getSecondSentence, concat)
       .doNext(upperCase)
       .appendResult()
-      .exec
+      .subscribe
     Thread.sleep(2000)
     println(result)
   }
@@ -23,7 +23,7 @@ class TestFuture extends FutureDSL {
     ParallelFunctions(getSentence, () => null.asInstanceOf[String], concat)
       .doNext(upperCase)
       .appendResult()
-      .exec
+      .subscribe
     Thread.sleep(2000)
     println(result)
   }
@@ -38,7 +38,7 @@ class TestFuture extends FutureDSL {
       .doNext(replace("AWESOME", "cool"))
       .doNext(upperCase)
       .appendResult()
-      .exec
+      .subscribe
     Thread.sleep(2000)
     println(result)
   }
@@ -53,7 +53,7 @@ class TestFuture extends FutureDSL {
       .doNewFuture(replace("AWESOME", "cool"))
       .doNext(upperCase)
       .appendResult()
-      .exec
+      .subscribe
     Thread.sleep(2000)
     println(result)
   }
@@ -66,7 +66,7 @@ class TestFuture extends FutureDSL {
       .doNext(concat(". This is awesome!!"))
       .doNext(upperCase)
       .appendResult()
-      .exec
+      .subscribe
     println(result)
   }
 

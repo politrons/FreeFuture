@@ -4,6 +4,8 @@
     <list default="true" id="059d764d-576f-4ad1-9cf5-a0de73c0a5f3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/politrons/future/Actions.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/politrons/future/Actions.scala" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/TestFuture.scala" afterPath="$PROJECT_DIR$/src/test/scala/TestFuture.scala" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -42,8 +44,8 @@
       <file leaf-file-name="TestFuture.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/TestFuture.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="14" selection-end-column="11" />
+            <state relative-caret-position="199">
+              <caret line="55" column="16" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -52,8 +54,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="112" lean-forward="false" selection-start-line="20" selection-start-column="112" selection-end-line="20" selection-end-column="112" />
+            <state relative-caret-position="360">
+              <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -66,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/politrons/future/Actions.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+              <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
               <folding>
                 <element signature="e#30#60#0" expanded="true" />
               </folding>
@@ -87,8 +89,8 @@
       <file leaf-file-name="FutureDSL.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/politrons/future/FutureDSL.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="39" column="52" lean-forward="true" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
+            <state relative-caret-position="205">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="28" selection-end-column="3" />
               <folding>
                 <element signature="e#30#87#0" expanded="true" />
               </folding>
@@ -167,8 +169,8 @@
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/main/scala/com/politrons/future/Algebras.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/politrons/future/FutureDSL.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/politrons/future/Actions.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/TestFuture.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/politrons/future/Actions.scala" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -669,7 +671,7 @@
       <updated>1515936667822</updated>
       <workItem from="1515936757173" duration="1077000" />
       <workItem from="1515937863070" duration="2811000" />
-      <workItem from="1516351596946" duration="6241000" />
+      <workItem from="1516351596946" duration="6476000" />
     </task>
     <task id="LOCAL-00001" summary="configs">
       <created>1515937801659</created>
@@ -727,7 +729,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516440015647</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Adding zip">
+      <created>1516440230369</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1516440230369</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -763,7 +772,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10129000" />
+    <option name="totallyTimeSpent" value="10364000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="22" width="1241" height="778" extended-state="6" />
@@ -919,16 +928,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/politrons/future/FutureDSL.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="39" column="52" lean-forward="true" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
-          <folding>
-            <element signature="e#30#87#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalaz/scalaz-core_2.11/srcs/scalaz-core_2.11-7.2.14-sources.jar!/scalaz/Free.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -940,7 +939,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/politrons/future/Actions.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+          <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
           <folding>
             <element signature="e#30#60#0" expanded="true" />
           </folding>
@@ -949,16 +948,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/TestFuture.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="14" selection-end-column="11" />
+        <state relative-caret-position="199">
+          <caret line="55" column="16" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/politrons/future/FutureDSL.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="28" selection-end-column="3" />
+          <folding>
+            <element signature="e#30#87#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="112" lean-forward="false" selection-start-line="20" selection-start-column="112" selection-end-line="20" selection-end-column="112" />
+        <state relative-caret-position="360">
+          <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
           <folding />
         </state>
       </provider>

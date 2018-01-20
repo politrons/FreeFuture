@@ -20,7 +20,7 @@ trait Actions extends Algebras {
       free.flatMap(any => liftF[Action, Any](_WhenFinish(any.asFuture)))
     }
 
-    def exec : Monad[Any] = free.foldMap(interpreter)
+    def subscribe : Monad[Any] = free.foldMap(interpreter)
 
   }
 
