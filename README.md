@@ -12,7 +12,16 @@ In case you want to run some function asynchroniously and chain with other funct
       .doNewFuture(replace("AWESOME", "cool"))
       .doNext(upperCase)
       .appendResult()
-      .~>
+      .exec
+```
+
+In case we want to run in parallel multiple functions in futures and then zip the results.
+
+```
+   ParallelFunctions(getSentence, getSecondSentence, concat --> The function to apply once the paralle functions finish)
+      .doNext(upperCase)
+      .appendResult()
+      .exec
 ```
 
 The DSL will manage all monads response to extract values as Option or Either.
