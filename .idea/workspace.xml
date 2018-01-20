@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="059d764d-576f-4ad1-9cf5-a0de73c0a5f3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/politrons/future/Actions.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/politrons/future/Actions.scala" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/politrons/future/Algebras.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/politrons/future/Algebras.scala" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/politrons/future/FutureDSL.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/politrons/future/FutureDSL.scala" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/TestFuture.scala" afterPath="$PROJECT_DIR$/src/test/scala/TestFuture.scala" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -39,11 +42,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestFuture.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestFuture.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/scala/TestFuture.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            <state relative-caret-position="90">
+              <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -66,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/politrons/future/Actions.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+              <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
               <folding>
                 <element signature="e#30#60#0" expanded="true" />
               </folding>
@@ -77,18 +80,18 @@
       <file leaf-file-name="Free.scala" pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalaz/scalaz-core_2.11/srcs/scalaz-core_2.11-7.2.14-sources.jar!/scalaz/Free.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
+            <state relative-caret-position="207">
               <caret line="213" column="12" lean-forward="false" selection-start-line="213" selection-start-column="12" selection-end-line="213" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FutureDSL.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FutureDSL.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/politrons/future/FutureDSL.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="46" column="16" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+            <state relative-caret-position="384">
+              <caret line="39" column="52" lean-forward="true" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
               <folding>
                 <element signature="e#30#87#0" expanded="true" />
               </folding>
@@ -166,10 +169,10 @@
       <list>
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/politrons/future/Actions.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/politrons/future/Algebras.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/TestFuture.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/politrons/future/FutureDSL.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/politrons/future/Actions.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/TestFuture.scala" />
       </list>
     </option>
   </component>
@@ -669,7 +672,7 @@
       <updated>1515936667822</updated>
       <workItem from="1515936757173" duration="1077000" />
       <workItem from="1515937863070" duration="2811000" />
-      <workItem from="1516351596946" duration="5390000" />
+      <workItem from="1516351596946" duration="6025000" />
     </task>
     <task id="LOCAL-00001" summary="configs">
       <created>1515937801659</created>
@@ -713,7 +716,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516439301714</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adding zip">
+      <created>1516439379820</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1516439379820</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -723,33 +733,33 @@
     <history-entry file="TestFuture_futureZip - 2018.01.20 at 10h 09m 27s.xml">
       <configuration name="TestFuture.futureZip" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestFuture_futureZip - 2018.01.20 at 10h 13m 41s.xml">
+      <configuration name="TestFuture.futureZip" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestFuture_futureZip - 2018.01.20 at 10h 16m 43s.xml">
+      <configuration name="TestFuture.futureZip" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestFuture_futureZip - 2018.01.20 at 10h 17m 36s.xml">
+      <configuration name="TestFuture.futureZip" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestFuture_futureZip - 2018.01.20 at 10h 18m 12s.xml">
+      <configuration name="TestFuture.futureZip" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestFuture_futureZip - 2018.01.20 at 10h 18m 44s.xml">
+      <configuration name="TestFuture.futureZip" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="TestFuture_futureZipWithErrors - 2018.01.20 at 00h 10m 18s.xml">
       <configuration name="TestFuture.futureZipWithErrors" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestFuture_futureZipWithErrors - 2018.01.20 at 00h 16m 01s.xml">
       <configuration name="TestFuture.futureZipWithErrors" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestFuture_waitingForFutureZip - 2018.01.19 at 23h 55m 49s.xml">
-      <configuration name="TestFuture.waitingForFutureZip" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestFuture_waitingForFutureZip - 2018.01.20 at 00h 00m 35s.xml">
-      <configuration name="TestFuture.waitingForFutureZip" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestFuture_waitingForFutureZip - 2018.01.20 at 00h 02m 07s.xml">
-      <configuration name="TestFuture.waitingForFutureZip" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestFuture_waitingForFutureZip - 2018.01.20 at 00h 02m 54s.xml">
-      <configuration name="TestFuture.waitingForFutureZip" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestFuture_waitingForFutureZip - 2018.01.20 at 00h 08m 24s.xml">
       <configuration name="TestFuture.waitingForFutureZip" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestFuture_waitingForMultipleFuture - 2018.01.19 at 23h 04m 46s.xml">
-      <configuration name="TestFuture.waitingForMultipleFuture" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9278000" />
+    <option name="totallyTimeSpent" value="9913000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="22" width="1241" height="778" extended-state="6" />
@@ -806,7 +816,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -908,14 +918,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/TestFuture.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/politrons/future/Algebras.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -924,31 +926,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/politrons/future/Actions.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/politrons/future/FutureDSL.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        <state relative-caret-position="384">
+          <caret line="39" column="52" lean-forward="true" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
           <folding>
-            <element signature="e#30#60#0" expanded="true" />
+            <element signature="e#30#87#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalaz/scalaz-core_2.11/srcs/scalaz-core_2.11-7.2.14-sources.jar!/scalaz/Free.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
+        <state relative-caret-position="207">
           <caret line="213" column="12" lean-forward="false" selection-start-line="213" selection-start-column="12" selection-end-line="213" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/politrons/future/FutureDSL.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/politrons/future/Actions.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="46" column="16" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+        <state relative-caret-position="306">
+          <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
           <folding>
-            <element signature="e#30#87#0" expanded="true" />
+            <element signature="e#30#60#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/TestFuture.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

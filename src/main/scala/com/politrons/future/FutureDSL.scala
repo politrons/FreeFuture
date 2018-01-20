@@ -17,9 +17,9 @@ trait FutureDSL extends Actions {
     liftF[Action, Any](_Zip(f, f1, zip))
   }
 
-  override def interpreter: Action ~> Id = new (Action ~> Id) {
+  override def interpreter: Action ~> Monad = new (Action ~> Monad) {
 
-    def apply[A](a: Action[A]): Id[A] = a match {
+    def apply[A](a: Action[A]): Monad[A] = a match {
       case _Action(function) => runInFuture(function);
       case _Zip(f1, f2, zip) => zipFunctions(f1, f2, zip)
       case _OnNext(future, f) => transformFuture(future, f)

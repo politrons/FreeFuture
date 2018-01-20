@@ -20,11 +20,11 @@ trait Actions extends Algebras {
       free.flatMap(any => liftF[Action, Any](_WhenFinish(any.asFuture)))
     }
 
-    def ~> : Id[Any] = free.foldMap(interpreter)
+    def exec : Monad[Any] = free.foldMap(interpreter)
 
   }
 
-  def interpreter: Action ~> Id
+  def interpreter: Action ~> Monad
 
   implicit class customAny(any: Any) {
 

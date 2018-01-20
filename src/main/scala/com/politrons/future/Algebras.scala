@@ -6,7 +6,7 @@ import scalaz.Free
 
 trait Algebras {
 
-  type Id[+A] = A
+  type Monad[+A] = A
 
   sealed trait Action[A]
 
