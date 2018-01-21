@@ -30,4 +30,5 @@ Since I´m a huge fan of [Rx](https://github.com/politrons/reactive), here I´m 
 
 The DSL will manage all monads response to extract values as Option or Either.
 
+You can play with the DSL [here](src/test/scala/TestFuture.scala)
 
