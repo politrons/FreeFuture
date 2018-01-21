@@ -21,7 +21,7 @@ In case we want to run in parallel multiple functions in futures and then zip th
       .doNext(upperCase)
       .subscribe()
 ```
-Since I´m a fan of Rx I´´ using same syntax for subscription callbacks:
+Since I´m a huge fan of Rx, here I´m using same syntax for subscription callbacks:
 
 * **onNext** executed per item emitted in the pipeline.
 * **onError** executed per throwable emitted in the pipeline.
