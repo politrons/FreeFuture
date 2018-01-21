@@ -5,7 +5,6 @@ import org.junit.Test
 
 class TestFuture extends FutureDSL {
 
-
   @Test
   def main() {
     FutureFunction(getSentence)
