@@ -30,6 +30,4 @@ Since I´m a huge fan of [Rx](https://github.com/politrons/reactive), here I´m 
 
 The DSL will manage all monads response to extract values as Option or Either.
 
-Also in case of exception in the pipeline, the throwable it will be propagate to subscribe OnError callback.
-
 
