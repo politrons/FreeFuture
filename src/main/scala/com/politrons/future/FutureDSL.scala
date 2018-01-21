@@ -29,7 +29,6 @@ trait FutureDSL extends Actions {
       case _WhenFinish(future) => appendFutureValue(future).asFutureM
       case _Subscribe(future, onNext, onError, onComplete) => processSubscribe(future, onNext, onError, onComplete).asFutureM
     }
-
   }
 
   def zipFunctions[A](f1: () => Any, f2: () => Any, zip: (Nothing, Nothing) => Any): Future[Any] = {
@@ -80,6 +79,7 @@ trait FutureDSL extends Actions {
 
       override def apply(any: Any): Any = {
         onNext(any)
+        future.onComplete(_ => onComplete())
         any
       }
     })
@@ -89,12 +89,11 @@ trait FutureDSL extends Actions {
 
       override def apply(t: Throwable): Unit = {
         onError(t)
+        future.onComplete(_ => onComplete())
       }
     })
-    future.onComplete(_ => onComplete())
     future
   }
-
 
   def appendFutureValue[A](future: Future[Any]): Any = future.onComplete(value => result = value.get)
 

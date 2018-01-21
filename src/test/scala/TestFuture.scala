@@ -10,20 +10,20 @@ class TestFuture extends FutureDSL {
   def main() {
     FutureFunction(getSentence)
       .doNext(upperCase)
-      .subscribe(value => println(s"OnNext:$value"),
-        t => println(s"OnError:$t",
-          () => println("We complete the pipeline")))
-    Thread.sleep(20000)
+      .subscribe(result => println(s"OnNext:$result"),
+        t => println(s"OnError:$t"),
+          () => println("We complete the pipeline"))
+    Thread.sleep(2000)
   }
 
   @Test
   def onError() {
     FutureFunction(() => new Right(null))
       .doNext(upperCase)
-      .subscribe(value => println(s"OnNext:$value"),
-        t => println(s"OnError:$t",
-          () => println("We complete the pipeline")))
-    Thread.sleep(20000)
+      .subscribe(result => println(s"OnNext:$result"),
+        t => println(s"OnError:$t"),
+          () => println("We complete the pipeline"))
+    Thread.sleep(2000)
   }
 
 

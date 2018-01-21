@@ -22,8 +22,10 @@ trait Algebras {
 
   case class _WhenFinish[T](future: Future[Any]) extends Action[Any]
 
-  case class _Subscribe[T](future: Future[Any], onNext: Any => Unit ,
-                           onError: Throwable => Any, onComplete: () => Unit) extends Action[Any]
+  case class _Subscribe[T](future: Future[Any],
+                           onNext: Any => Unit,
+                           onError: Throwable => Any,
+                           onComplete: () => Unit) extends Action[Any]
 
 
 }

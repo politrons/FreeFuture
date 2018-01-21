@@ -6,11 +6,11 @@ In case you want to run some function asynchroniously and chain with other funct
 
 ```
     FutureFunction(getSentence)
+      .doNext(concat(". This is awesome!!"))
       .doNext(upperCase)
-      .doNewFuture(replace("AWESOME", "cool"))
-      .subscribe(value => println(s"OnNext:$value"),
-        t => println(s"OnError:$t",
-          () => println("We complete the pipeline")))
+      .subscribe(result => println(s"OnNext:$result"),
+        t => println(s"OnError:$t"),
+          () => println("We complete the pipeline"))
 
 ```
 
