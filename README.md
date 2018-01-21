@@ -19,7 +19,6 @@ In case we want to run in parallel multiple functions in futures and then zip th
 ```
    ParallelFunctions(getSentence, getSecondSentence, concat --> Function to apply once the paralle functions finish)
       .doNext(upperCase)
-      .appendResult()
       .subscribe()
 ```
 
