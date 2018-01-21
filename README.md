@@ -28,6 +28,12 @@ Since I´m a huge fan of [Rx](https://github.com/politrons/reactive), here I´m 
 * **onError** executed per throwable emitted in the pipeline.
 * **onComplete** executed once the pipeline has finish to emitt items.
 
+    ```
+    subscribe(result => /*onNext callback*/,
+            t => /*onError callback*/,
+              () => /*onComplete callback*/)
+    ```
+
 The DSL will manage all monads response to extract values as Option or Either.
 
 You can play with the DSL [here](src/test/scala/TestFuture.scala)
