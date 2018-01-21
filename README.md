@@ -29,8 +29,8 @@ Since I´m a huge fan of [Rx](https://github.com/politrons/reactive), here I´m 
 * **onComplete** executed once the pipeline has finish to emitt items.
 
     ```
-    subscribe(result => /*onNext callback*/,
-            t => /*onError callback*/,
+    subscribe(r  => /*onNext callback*/,
+              t  => /*onError callback*/,
               () => /*onComplete callback*/)
     ```
 
