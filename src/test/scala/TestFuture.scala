@@ -12,7 +12,7 @@ class TestFuture extends FutureDSL {
       .doNext(upperCase)
       .subscribe(result => println(s"OnNext:$result"),
         t => println(s"OnError:$t"),
-          () => println("We complete the pipeline"))
+        () => println("Pipeline completed"))
     Thread.sleep(2000)
   }
 
@@ -22,7 +22,7 @@ class TestFuture extends FutureDSL {
       .doNext(upperCase)
       .subscribe(result => println(s"OnNext:$result"),
         t => println(s"OnError:$t"),
-          () => println("We complete the pipeline"))
+        () => println("Pipeline completed"))
     Thread.sleep(2000)
   }
 
