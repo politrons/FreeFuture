@@ -7,30 +7,48 @@ class TestFuture extends FutureDSL {
 
 
   @Test
+  def main() {
+    FutureFunction(getSentence)
+      .doNext(upperCase)
+      .subscribe(value => println(s"OnNext:$value"),
+        t => println(s"OnError:$t",
+          () => println("We complete the pipeline")))
+    Thread.sleep(20000)
+  }
+
+  @Test
+  def onError() {
+    FutureFunction(() => new Right(null))
+      .doNext(upperCase)
+      .subscribe(value => println(s"OnNext:$value"),
+        t => println(s"OnError:$t",
+          () => println("We complete the pipeline")))
+    Thread.sleep(20000)
+  }
+
+
+  @Test
   def futureZip() {
-    printThreadInfo("init")
     ParallelFunctions(getSentence, getSecondSentence, concat)
       .doNext(upperCase)
       .appendResult()
-      .subscribe
+      .subscribe()
     Thread.sleep(2000)
     println(result)
   }
 
   @Test
   def futureZipWithErrors() {
-    printThreadInfo("init")
     ParallelFunctions(getSentence, () => null.asInstanceOf[String], concat)
       .doNext(upperCase)
       .appendResult()
-      .subscribe
+      .subscribe()
     Thread.sleep(2000)
     println(result)
   }
 
   @Test
   def waitingForFuture() {
-    printThreadInfo("init")
     FutureFunction(getSentence)
       .doNext(upperCase)
       .doNext(concat(". This is awesome!!"))
@@ -38,14 +56,13 @@ class TestFuture extends FutureDSL {
       .doNext(replace("AWESOME", "cool"))
       .doNext(upperCase)
       .appendResult()
-      .subscribe
+      .subscribe()
     Thread.sleep(2000)
     println(result)
   }
 
   @Test
   def waitingForMultipleFuture() {
-    printThreadInfo("init")
     FutureFunction(getSentence)
       .doNext(upperCase)
       .doNext(concat(". This is awesome!!"))
@@ -53,20 +70,19 @@ class TestFuture extends FutureDSL {
       .doNewFuture(replace("AWESOME", "cool"))
       .doNext(upperCase)
       .appendResult()
-      .subscribe
+      .subscribe()
     Thread.sleep(2000)
     println(result)
   }
 
   @Test
   def withoutWait() {
-    printThreadInfo("init")
     FutureFunction(getSentence)
       .doNext(upperCase)
       .doNext(concat(". This is awesome!!"))
       .doNext(upperCase)
       .appendResult()
-      .subscribe
+      .subscribe()
     println(result)
   }
 
@@ -77,7 +93,7 @@ class TestFuture extends FutureDSL {
 
   def getSecondSentence: () => Either[String, String] = {
     printThreadInfo("sentence")
-    () => new Right(" run in parallel is awesome")
+    () => new Right(null)
   }
 
   def upperCase: (String => Option[String]) = a => {

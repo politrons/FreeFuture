@@ -27,7 +27,9 @@ trait FutureDSL extends Actions {
       case _OnNext(future, f) => transformFuture(future, f).asFutureM
       case _DoNewFuture(future, f) => runInNewFuture(future, f).asFutureM
       case _WhenFinish(future) => appendFutureValue(future).asFutureM
+      case _Subscribe(future, onNext, onError, onComplete) => processSubscribe(future, onNext, onError, onComplete).asFutureM
     }
+
   }
 
   def zipFunctions[A](f1: () => Any, f2: () => Any, zip: (Nothing, Nothing) => Any): Future[Any] = {
@@ -71,6 +73,28 @@ trait FutureDSL extends Actions {
       case value => function(value)
     }
   }
+
+  def processSubscribe(future: Future[Any], onNext: Any => Unit, onError: Throwable => Any, onComplete: () => Unit): Future[Any] = {
+    future.onSuccess(new PartialFunction[Any, Any] {
+      override def isDefinedAt(x: Any): Boolean = true
+
+      override def apply(any: Any): Any = {
+        onNext(any)
+        any
+      }
+    })
+    future.onFailure(new PartialFunction[Throwable, Unit] {
+
+      override def isDefinedAt(x: Throwable): Boolean = true
+
+      override def apply(t: Throwable): Unit = {
+        onError(t)
+      }
+    })
+    future.onComplete(_ => onComplete())
+    future
+  }
+
 
   def appendFutureValue[A](future: Future[Any]): Any = future.onComplete(value => result = value.get)
 
